@@ -9,4 +9,5 @@ class Asset {
 		name nullable: false
 		value min: 0
     }
+	
 }

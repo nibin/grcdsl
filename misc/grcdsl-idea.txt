@@ -1,0 +1,48 @@
+
+
+check compliance of assets
+
+if compliance status is failed then
+  create risks for each asset from compliance findings
+  create issue for each asset having high risk from risks 
+  
+
+NIST SP 800-30
+
+---------
+
+Risk assessment done on assets
+Assets have CIA values - calculates asset values
+assets have threats.
+
+threats-vuln mapping available
+vuln will have severity
+
+Likelihood and impact values are provided
+
+calculate risk = impact*likelihood
+
+---------
+
+
+Planning
+Collecting audit data
+Performing audit tests
+Reporting for audit results
+
+-------------
+compliance.status
+compilance.findings
+compliance.
+
+---------------
+
+Exposure Factor (EF) : % of asset loss caused by threat.
+
+Single Loss Expectancy (SLE): Frequency of threat occurrence per year.
+
+Annualized Rate of Occurrence (ARO) : Asset Value x Exposure Factor (EF).
+
+Annualized Loss Expectancy (ALE) : Single Loss Expectancy (SLE) x Annualized Rate of Occurrence (ARO).
+
+
