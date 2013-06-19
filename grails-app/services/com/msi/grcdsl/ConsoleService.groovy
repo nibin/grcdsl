@@ -1,34 +1,30 @@
 package com.msi.grcdsl
 
+import static org.codehaus.groovy.syntax.Types.*
+
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.customizers.ImportCustomizer
+import org.codehaus.groovy.control.customizers.SecureASTCustomizer
 
 class ConsoleService extends org.grails.plugins.console.ConsoleService {
 
 	@Override
 	Object eval(String code, Map bindingValues) {
 
-		def g = new GrcDslCommon()
+		
 		bindingValues.assets = Asset.list()
-		bindingValues.g = g
-		bindingValues.sayHello = g.&sayHello
-		bindingValues.check = g.&check
-		bindingValues.of  = g.&of
-		bindingValues.leftShift = g.&leftShift
+
+		assignBuilder(bindingValues)
+
 
 		def domainMap = Domains.values().collectEntries {
 			[(it.name()): it]
 		}
 		bindingValues.putAll(domainMap)
 
-		def conf= new CompilerConfiguration()
-		//conf.scriptBaseClass = GrciCommonFunctions
 
-		def imports = new ImportCustomizer()
-		//imports.addStaticStar(com.msi.grcdsl)
-		imports.addStarImport("com.msi.grcdsl")
-		conf.addCompilationCustomizers(imports)
-
+		def conf = prepareCompilerConf()
+		//GroovyClassLoader loader = new GroovyClassLoader(this.class.classLoader)
 
 		createShell(bindingValues, conf).evaluate code
 	}
@@ -41,35 +37,105 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 		new GroovyShell(grailsApplication.classLoader, new Binding(bindingValues), conf)
 	}
 
-	enum Domains {
+	def prepareCompilerConf() {
+		def imports = new ImportCustomizer()
+		imports.addStarImport("com.msi.grcdsl")
 
-		compliance
+		/*
+		 def exprClosure = { expr -> 
+		 return true 
+		 } as ExpressionChecker */
+
+		//final ImportCustomizer imports = new ImportCustomizer().addStaticStars('java.lang.Math') // add static import of java.lang.Math
+		final SecureASTCustomizer secure = new SecureASTCustomizer()
+		secure.with {
+			closuresAllowed = true
+			methodDefinitionAllowed = true
+
+			//expressionCheckers = [exprClosure]
+
+			importsWhitelist = []
+			staticImportsWhitelist = []
+			staticStarImportsWhitelist = []
+			tokensWhitelist = [
+				PLUS,
+				MINUS,
+				MULTIPLY,
+				DIVIDE,
+				MOD,
+				POWER,
+				PLUS_PLUS,
+				MINUS_MINUS,
+				COMPARE_EQUAL,
+				COMPARE_NOT_EQUAL,
+				COMPARE_LESS_THAN,
+				COMPARE_LESS_THAN_EQUAL,
+				COMPARE_GREATER_THAN,
+				COMPARE_GREATER_THAN_EQUAL,
+			].asImmutable()
+
+			constantTypesClassesWhiteList = [
+				Integer,
+				Float,
+				Long,
+				Double,
+				BigDecimal,
+				Integer.TYPE,
+				Long.TYPE,
+				Float.TYPE,
+				Double.TYPE
+			].asImmutable()
+
+			receiversClassesWhiteList = [
+				Math,
+				Integer,
+				Float,
+				Double,
+				Long,
+				BigDecimal,
+				Object
+			].asImmutable()
+		}
+
+		CompilerConfiguration config = new CompilerConfiguration()
+		config.addCompilationCustomizers(imports)
+		//config.setScriptBaseClass("com.msi.grcdsl.GrcDslCommFunc")
+		return config
 	}
-	//abstract
-	class GrcDslCommon
-	//extends Script
-	{
-		Object targetDomain
-
-		String sayHello() {
-			return "hello"
-		}
-
-		GrcDslCommon check(Domains domain) {
-			if(domain == Domains.compliance) {
-				targetDomain = new Compliance()
-				log.info("Selected operating model is ${domain.name()}")
-			}
-			return this;
-		}
-
-		GrcDslCommon of(List list) {
-			log.info("Operating on a list of size: ${list.size()}")
-			return this
-		}
-
-		Object leftShift(GrcDslCommon g) {
-			return g.targetDomain
-		}
+	
+	def assignBuilder(def bindingValues) {
+		
+		def g = new GrcBuilder()
+		bindingValues.builder = g
+		bindingValues.check = g.&check
+		bindingValues.of = g.&of
 	}
+
+//	enum Domains {
+//
+//		compliance
+//	}
+//	//abstract
+//	class GrcDslBuilder
+//	//extends Script
+//	{
+//		Object targetDomain
+//
+//		String sayHello() {
+//			return "hello"
+//		}
+//
+//		GrcDslBuilder check(Domains domain) {
+//			if(domain == Domains.compliance) {
+//				targetDomain = new Compliance()
+//				log.info("Selected operating model is ${domain.name()}")
+//			}
+//			return this;
+//		}
+//
+//		GrcDslBuilder of(List list) {
+//			log.info("Operating on a list of size: ${list.size()}")
+//			return this
+//		}
+//	}
 }

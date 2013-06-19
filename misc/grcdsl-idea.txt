@@ -1,6 +1,20 @@
 
+//def audit = new Audit()
+audit << check compliance of assets
 
-check compliance of assets
+start audit
+
+
+
+show threats of Asset.getAll(1,2,3)
+show status of audit.results
+if audit.status == /passed/ {
+  
+}
+
+
+
+
 
 if compliance status is failed then
   create risks for each asset from compliance findings
