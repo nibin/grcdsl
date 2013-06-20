@@ -5,16 +5,17 @@ import static org.codehaus.groovy.syntax.Types.*
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.customizers.ImportCustomizer
 import org.codehaus.groovy.control.customizers.SecureASTCustomizer
+import org.codehaus.groovy.control.customizers.SecureASTCustomizer.ExpressionChecker
 
 class ConsoleService extends org.grails.plugins.console.ConsoleService {
 
 	@Override
 	Object eval(String code, Map bindingValues) {
 
-		
 		bindingValues.assets = Asset.list()
+		bindingValues.audit = new Audit()
 
-		assignBuilder(bindingValues)
+		//assignBuilder(bindingValues)
 
 
 		def domainMap = Domains.values().collectEntries {
@@ -41,10 +42,11 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 		def imports = new ImportCustomizer()
 		imports.addStarImport("com.msi.grcdsl")
 
-		/*
+		/*		
 		 def exprClosure = { expr -> 
 		 return true 
-		 } as ExpressionChecker */
+		 } as ExpressionChecker
+		 */ 
 
 		//final ImportCustomizer imports = new ImportCustomizer().addStaticStars('java.lang.Math') // add static import of java.lang.Math
 		final SecureASTCustomizer secure = new SecureASTCustomizer()
@@ -56,7 +58,7 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 
 			importsWhitelist = []
 			staticImportsWhitelist = []
-			staticStarImportsWhitelist = []
+			staticStarImportsWhitelist = ["com.msi.grcdsl"]
 			tokensWhitelist = [
 				PLUS,
 				MINUS,
@@ -99,43 +101,16 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 
 		CompilerConfiguration config = new CompilerConfiguration()
 		config.addCompilationCustomizers(imports)
-		//config.setScriptBaseClass("com.msi.grcdsl.GrcDslCommFunc")
+		config.setScriptBaseClass("com.msi.grcdsl.GrcDslCommService")
 		return config
 	}
-	
+
 	def assignBuilder(def bindingValues) {
-		
+
 		def g = new GrcBuilder()
 		bindingValues.builder = g
 		bindingValues.check = g.&check
 		bindingValues.of = g.&of
 	}
 
-//	enum Domains {
-//
-//		compliance
-//	}
-//	//abstract
-//	class GrcDslBuilder
-//	//extends Script
-//	{
-//		Object targetDomain
-//
-//		String sayHello() {
-//			return "hello"
-//		}
-//
-//		GrcDslBuilder check(Domains domain) {
-//			if(domain == Domains.compliance) {
-//				targetDomain = new Compliance()
-//				log.info("Selected operating model is ${domain.name()}")
-//			}
-//			return this;
-//		}
-//
-//		GrcDslBuilder of(List list) {
-//			log.info("Operating on a list of size: ${list.size()}")
-//			return this
-//		}
-//	}
 }

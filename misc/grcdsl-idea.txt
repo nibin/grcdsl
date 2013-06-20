@@ -1,6 +1,14 @@
 
-//def audit = new Audit()
-audit << check compliance of assets
+
+set audit scope: network, objective: compliance //named params
+
+start audit on assets //builders
+
+if audit.status == /failed/ {
+  
+}
+
+audit.compliance of assets
 
 start audit
 

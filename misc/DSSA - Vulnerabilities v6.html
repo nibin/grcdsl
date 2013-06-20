@@ -1,0 +1,1173 @@
+<html xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:cor="http://schemas.mindjet.com/MindManager/Core/2003">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Outline of Vulnerabilities</title>
+<style type="text/css">#level1Indent { margin-left:  2em } </style>
+<style type="text/css">#level2Indent { margin-left:  4em } </style>
+<style type="text/css">#level3Indent { margin-left:  6em } </style>
+<style type="text/css">#level4Indent { margin-left:  8em } </style>
+<style type="text/css">#level5Indent { margin-left:  10em } </style>
+<style type="text/css">#levelXIndent { margin-left:  12em } </style>
+<style type="text/css">#level1Style { font-size: 11pt; font-weight: bold; margin-bottom: 0.5em; margin-left:  2em } </style>
+<style type="text/css">#level2Style { font-size:  9pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em } </style>
+<style type="text/css">#level3Style { font-size:  8pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em } </style>
+<style type="text/css">#level4Style { font-size:  8pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em } </style>
+<style type="text/css">#level5Style { font-size:  8pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em } </style>
+<style type="text/css">#levelXStyle { font-size:  8pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em } </style>
+<style type="text/css">#notesStyle { font-size:  8pt; margin-bottom: 1em } </style>
+</head>
+<body>
+<div id="level1Indent">
+<div id="level1Style"> Vulnerabilities</div>
+</div>
+<div id="level2Indent">
+<div id="level2Style">1 Operational issues</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">1.1 Business/technical process vulnerabilities</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.1 Failure by registrars/resellers to adhere to the transfer policy - SAC 7</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.2 A lock-out situation, i.e. a transfer of the domain or a change in the delegation of a domain, during which changes to DNS configuration information may be prohibited. (SAC 49)</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.3 Insufficient identity verification - SAC 7</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.4 Elements of the Registry Failover Plan (mitigation)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.1 Considerable additional study is needed to develop a robust registry failover plan. However, based on the critical functions, transition experiences and failure scenarios described in this (interim) report, registries should consider at least the following measures:</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.2 Provide for geographic diversity of name servers and have contingency plans in place. Include diversity and contingency progress and status reports in monthly reports to ICANN.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.3 Document contingency plans, provide this documentation on a confidential basis to ICANN for review and consultation, and test the plans on a periodic basis.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.4 Document archival and accuracy measures performed during the monthly reporting period, and information regarding incidents (e.g., problems completing zone changes, and attacks against the registry infrastructure).</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.5 With ICANN, establish a clear communication plan for informing affected registrants, registrars, users and Internet community in the event of a registry failure. Commmunicate the reasons for the failure and available options.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.6 As part of the new gTLD process, applicants should submit a TLD transition plan which identifies the critical functions of the registry and describes how each of those functions would be transitioned to a new operator in the event of registry failure This plan may include the identification of a back-up or temporary provider. The applicant may designate this section of the gTLD agreement or application as confidential. The transition plan is to be retained by the registry as part of the registry's overall failover plan. The transition plan requirement follows the recommendations in the GAC Principles on New gTLDs related to registry failover and continuity practices for new gTLDs.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.4.7 A clearly documented transition process:</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.5 Failure to renew a domain name registration</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.5.1 Risks (SAC 10)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.5.1.1 Damage to reputation</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.5.1.2 Material loss</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.5.1.3 Lost recurring revenue opportunities</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.5.2 A renewal lapse occurs when, by choice or oversight, a registrant allows a domain name registration to expire. A different party may register the domain name after the expiration of relevant grace periods. In some cases, the activities of the new registrant may prove harmful to the interests of the registrant who permitted the registration to expire.10 In other cases, the registrant may lose the domain name and be forced to find another domain name (thereby absorbing the costs of switching to a new domain name) or to pursue a potentially costly and time- consuming dispute resolution process to regain control of the domain name.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.6 registrar automation patterns/behaviors</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.7 Non-renewal of a domain name associated with a DNS Name Server -- SAC 11</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.7.1 Problems may arise when the registrant of a domain name A uses a DNS name server in domain B for domain name resolution, and the registrant of domain name B accidentally or intentionally allows its domain name registration to expire. In circumstances where coordination across well-intentioned parties is lost, the expected resolution of domain A may be interrupted or may become unpredictable due to A&rsquo;s dependence on the name server in domain B; in other circumstances, a new registrant of domain B may configure domain A's DNS information for malicious purposes, including phishing attacks, email interception, and redirection of Internet users to different websites with different and possibly harmful content.11 While domain A can be restored to proper function by updating the registry with a new name server (perhaps on domain A or C), this can present operational challenges to accomplish in the extreme short term.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.8 Orphaned glue records (SAC 48)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.8.1 Definition</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.8.1.1 By definition, orphan records used to be glue records. A glue record becomes an "orphan" when the delegation point NS record referencing it is removed without also removing the corresponding glue record. The delegation point NS record is sometimes referred to as the parent NS record.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.8.1.2 For instance, continuing the example from the previous section, if the EXAMPLE.TLD delegation is removed from the TLD zone but the NS.EXAMPLE.TLD glue record remains in the zone, NS.EXAMPLE.TLD has now become an orphan record because the parent NS record is no longer present in the zone but the address record remains.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.8.1.3 The term "orphan" is chosen to signify that this record no longer has a parent NS record. Usually registrars and registrants no longer have administrative control over the orphan record in the registry when its parent NS record is removed.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.8.1.4 Other delegated domains (not necessarily under the same TLD) might still rely on the orphan record. This situation may lead to inconsistencies and even abuse because of the lack of administrative control and lack of attribution for this orphan record.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.9 Inaccurate/unavailable registrar/registry "abuse" contact information</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.9.1 Issue statement (SAC 38)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.9.1.1 &bull; Information for several kinds of points of contact is published for registrars. Not all of these are the appropriate points of contact for dealing with abuse claims or criminal complaints. Sorting out the appropriate point of contact may delay an investigation.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.9.1.2 &bull; Users that make inquiries or investigate abuse and illegal activities potentially involving a domain name must rely on registrars to voluntarily publish contact information that in a readily accessible manner. Anecdotal information conveyed to SSAC indicates that:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.9.1.2.1 a) Not all registrars voluntarily publish public contact information on their web sites, b) Not all of the published contact information is accurate or complete, c) Personnel who are reached via certain published contact information may be unable to handle abuse inquiries or may be unfamiliar with escalation procedures that would put an investigator in touch with a suitable (e.g., technical) contact, and d) Not all registrars publish a separate abuse contact.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.9.1.3 &bull; A public contact may only be available during specific business hours, whereas an abuse contact should be available 24 x 7. Inquiries involving alleged abuse or criminal activities typically require timely if not urgent response. For example, inquiries that will lead to the suspension of a domain name used in a phishing attack, in support of an illegal activity (hosting of child pornography or illegal sales of prescription pharmaceuticals) are ideally processed within hours. In the case of a &ldquo;double flux&rdquo; attack3, minutes of delay provide an attacker with sufficient time to divert his attack vector to other domain names he has registered or domains over which he has obtained unauthorized control.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.10 A registrant who does not have complete knowledge of the information used to create the zone file for a domain is at risk of having name resolution interrupted without the ability to restore name service. SAC 49</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.1.10.1 Zone data management considerations (SAC 40, 44, 49)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.10.1.1 Understand what resource records are included in default zone configurations</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.10.1.2 Understand redirection and non-existent domain handling policies/practices</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.10.1.3 If non-existent domains are redirected to advertising pages, determine whether/how to opt out</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.10.1.4 Obtain copies of zone files for archive/restoration purposes</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.1.10.1.5 Use change-notifications from DNS providers to trigger requests for new copies of zone files for archiving</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.1.11 Registry transition (SAC 47)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">1.2 Infrastructure vulnerabilities</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.2.1 Supporting infrastructure (insufficient SLA's, support, etc)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.1 Rapid change</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.2 Bandwidth</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.3 Server sizing</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.4 Failover</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.5 Homogeneity (software, hardware, etc) -- small gene pool, one vulnerability could have broad impact </div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.6 Poor design (hardware and software)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.7 Implementation errors (hardware and software)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.1.7.1 Failure to employ appropriate forms of source IP address validation - SAC 8</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.1.7.2 Open recursive name servers - SAC 8</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.1.7.3 Configuration errors</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.8 Poor or insufficient infrastructure, whether within or beyond the control of the registry, may cause a temporary failure for a registry. Local infrastructure conditions should be considered in registry contingency planning. Potential infrastructure problems may include:</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.9 Insufficient capacity</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.10 Name server problems</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.1.10.1 The operation of nameservers is a critical function of a registry. In the event that IANA notices the nameservers for a registry are offline, IANA attempts to contact the registry and assist with restoring service.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.1.10.2 Such failures could include loss of primary database server, which would result in switchover of the registry to a secondary database server. In the event of multiple database server failures, a registry could switchover to a mirror site, if one was available.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.11 Bugs</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.12 Scalability issues</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.1.13 DNSSEC impact on broadband routers and firewalls -- SAC 35</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.2.2 Single point of failure</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.1 DNS Infrastructure Recommendations -- SAC 5</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.1.1 1. Zone administrators should adopt a policy that ensures that referral information for their sub-zones is updated upon request and in a timely fashion.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.1.2 2. Zone administrators should adopt a policy that requires multiple independent servers for their zone when it delegates sub-zones to more than one responsible party.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.2 Topology</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.3  Business or technical failure of 3rd party service providers</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.4 A temporary (technical) failure of self-hosted DNS</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.4.1 Software </div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.4.2 Hardware</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.4.3 Infrastructure (electricity, fiber, etc.)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.5 Internal vs external DNS hosting</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.5.1 Resiliency</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">1.2.2.5.2 Diversity</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.6 Geo location</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.7 Power facilities</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.8 HVAC facilities</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.9 Email is the preferred (often only) method by which registrars attempt to notify a registrant of account activity</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.10 Access/ability to modify contact/DNS configuration to all domains in a registration account is commonly granted through a single user account and password</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.2.11 Insufficient diversity and redundancy in WANs (access circuits), LAN infrastructure (switching), security systems, applications servers and storage facilities</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">1.2.3 Additional registry-failover scenarios that need study </div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.1 What would happen if there was lack of cooperation between the current registry operator and the designated successor or a hostile reassignment of a registry?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.2 Data is lost or integrity of the data is in question.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.3 The continuing and overlapping name service arrangements, and the duration of those arrangements.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.4 A determination should be made on the standard metric for outage of registry services in a transition from one operator to another.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.5 What registrar testing should occur in the event of TLD transition?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.6 ICANN's role in transition should be defined.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.7 How registrars and registrants are notified of the transition should be defined.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">1.2.3.8 Failure scenarios involving DNSSEC keys and signed zones.</div>
+</div>
+<div id="level2Indent">
+<div id="level2Style">2 Managerial choices/issues</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.1 Lack of visibility and understanding by decision-makers</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.1 Considerations when choosing a domain registration service provider SAC 44</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.1 Domain registration account access or activity reports</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.2 Per-domain access controls (or are all operations available to a single user across all domains)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.3 Ability to set client and server status locks at the registry</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.4 Methods of communication to notify customers of changes to registration-account and domain-registration data</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.5 Is a form of secure email available</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.6 How are customers protected against phishing attacks where the attacker impersonates the registrar?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.7 How is redirection/wildcarding on non-existent domains handled and can this be modified</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.8 What forms of DNS monitoring are available</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.9 What types of DNS configuration and zone checking are available</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.10 Are name server or zone data activity reports available to customers?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.11 Is WHOIS monitoring available.  How frequently does it update?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.12 Are privacy-protection services available?  Directly or through a 3rd party provider?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.13 Are descriptions of incident and abuse-response practices provided?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.14 What assistance is available for customers in cases involving domain hijacking or dispute over rightful registration?  Are abuse or incident points of contact available?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.15 What certifications or regulations has the registrar satisfied (e.g. PCI, ISO 27000, etc.)?  What external audit services are used?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.16 Has ICANN ever issued a notice of breach of agreement?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.1.17 Does the registrar participate in the ICANN Data Escrow program?</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.2 Registry considerations SAC 44</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.1 There are certain service and operational aspects of registries that we believe merit registrant consideration. In particular, several of the considerations mentioned in this section relate to service offerings that can be facilitated through a registrar.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.2 Are registry side locks available?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.3 Describe registry infrastructure (diversity, etc.)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.4 Does the registry support multi-factor authentication of registrars (e.g.tokens, passwords, certificates)?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.5 Does the registry support DNSSEC?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.6 What are registry policies regarding abuse and malicious domains?  Is there a published abuse point of contact?  Is there 24x7 abuse support available to registrars?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.7 How frequently does the WHOIS service update?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.2.8 What certifications or regulations has the registrar satisfied (e.g. PCI, ISO 27000, etc.)?  What external audit services are used?</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.3 Registrars have different target markets and service models</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.3.1 SAC 40 Recommendation (1) Registrars are encouraged to offer stronger levels of protection against domain name registration service exploitation or misuse for customers who want or need them. Measures enumerated in this report can be offered as optional services to customers, individually or bundled.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.4 Customers are unfamiliar with registration protection measures</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.5 inadequate assessment of risks associated with loss of control of domains/registrar-accounts</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.6 Risk Management and domain names</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.1 Identify the value of an asset (tangible or intangible);</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.2 &bull; List the ways in which that value is threatened (loss, theft, misuse);</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.3 &bull; Determine how the threat can be realized, i.e., what makes the domain name vulnerable to attack or exploitation;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.4 &bull; Determine the probability or risk that each threat poses;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.5 &bull; Determine how the risk can be mitigated or reduced;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.6 &bull; Determine the cost of mitigating or reducing the risk to an acceptable level of risk and cost; and</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.6.7 &bull; Determine the appropriate budget/priority and implement risk mitigation or reduction.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.7 Elements of the Registry Failover Plan (mitigation)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.1 Considerable additional study is needed to develop a robust registry failover plan. However, based on the critical functions, transition experiences and failure scenarios described in this (interim) report, registries should consider at least the following measures:</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.2 Provide for geographic diversity of name servers and have contingency plans in place. Include diversity and contingency progress and status reports in monthly reports to ICANN.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.3 Document contingency plans, provide this documentation on a confidential basis to ICANN for review and consultation, and test the plans on a periodic basis.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.4 Document archival and accuracy measures performed during the monthly reporting period, and information regarding incidents (e.g., problems completing zone changes, and attacks against the registry infrastructure).</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.5 With ICANN, establish a clear communication plan for informing affected registrants, registrars, users and Internet community in the event of a registry failure. Commmunicate the reasons for the failure and available options.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.6 As part of the new gTLD process, applicants should submit a TLD transition plan which identifies the critical functions of the registry and describes how each of those functions would be transitioned to a new operator in the event of registry failure This plan may include the identification of a back-up or temporary provider. The applicant may designate this section of the gTLD agreement or application as confidential. The transition plan is to be retained by the registry as part of the registry's overall failover plan. The transition plan requirement follows the recommendations in the GAC Principles on New gTLDs related to registry failover and continuity practices for new gTLDs.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.7.7 A clearly documented transition process:</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.8 Levels of security management vary within entities</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.8.1 SAC 40 Recommendation (3) Registrars should consider the value of voluntarily having an independent security audit performed on their operations as a component of their security due diligence.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.8.2 SAC 40 Recommendation (4) ICANN and registrars should study whether registration services would generally improve and registrants would benefit from having an approved independent third party that will, at the request of a registrar, perform a security audit based on a prescribed set of security measures. ICANN would distinguish registrars that voluntarily satisfy the benchmarks of this security audit through a trusted security mark program that is implemented in a manner similar to the way that SSL certificate issuing authorities provide trust marks or seals for web site operators who satisfy that authority&rsquo;s security criteria.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.1.9 Lack of ongoing attention/review of security practices -- making decisions at one time, but not going back to review those choices</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.1.9.1 Example -- Finding (2) While there are a large number of registrars that offer consumer-focused domain name registration services, and a smaller number of registrars and &ldquo;brand management&rdquo; organizations that offer security services to high-profile, highly targeted domain name holders (typically as part of an overall brand equity protection service), SSAC notes that &ldquo;pure play, secure&rdquo; registration service providers are rare, in part due to the fact that evaluating security measures does not play as prominent a role in customer decisions when choosing a registrar as it should.  SAC 40</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.2 Inadequate documentation of DNS architecture and operations (SAC 49)</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.1 1. Complete and accurate contact information, including emergency or abuse contacts, for all parties that provide DNS service.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.2 2. Complete and accurate contact information, including emergency or abuse contacts, for all hosting parties on whom you depend upon for configuration information. Examples include web, email, voice, or other hosting providers on whose systems your services are hosted and from whom you will obtain naming and IP address information for DNS resource records (e.g., MX, CNAME, NAPTR, or other resource record types).</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.3 3. Names and IP addresses of all name servers on which your zones are hosted.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.4 4. Topology information, i.e. information that illustrates location and connectivity of your DNS hosting providers.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.5 5. Copies of the published zone file.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.6 6. Copies of all the information that is needed to compose your zone file.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.7 7. Notes and instructions on the steps used to compose the zone file and the rationale for the contents.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.8 8. Historical copies of all information listed above.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.2.9 9. Operational statistics and trends related to load serviced by the DNS architecture. (These are useful when troubleshooting.)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.3 Inadequate funding (for infrastructure, training, etc.)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.4 Inadequate continuity planning for recovering from DNS outages</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.4.1 Have a plan to respond to all possible outage types. Identify who is responsible, what actions responsible parties must take, and make certain responsible parties have access to all the documentation they need to perform their role in the recovery process. Document all incidents and perform a post-incident (mortem) analysis to assess the effectiveness of the plan. (SAC 49)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.5 DNSSEC</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.5.1 Overview</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.1.1 DNS Security Extensions (DNSSEC) uses encryption methods to provide operational- level protection against the unauthorized alteration of DNS information</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.1.2 DNSSEC provides origin authentication of DNS information and thus provides protection against impersonation attacks: a recipient of a DNSSEC-signed response to a query on your domain name is assured that the resource record came from you, the authoritative provider of DNS information for this domain.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.1.3 DNSSEC also provides data integrity and thus provides protection against cache- poisoning and related (e.g., Kaminsky27) attacks: a recipient of a DNSSEC-enabled response to a query on your domain name is assured that the DNS data in the response has not been altered.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.1.4 DNSSEC provides authenticated denial of existence for a particular name (an assurance that the domain does not exist in the zone file). This feature assures a recipient of a DNSSEC-enabled response containing a non-existent domain (NXDOMAIN) that the domain is truly not in your zone file and thus prevents certain denial of service attacks.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.5.2 Coordinate support between parties</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.1 Importing and exporting keys</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.2 Importing and exporting zone files</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.3 Un-signing signed domains</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.4 Importing new NS RR sets without DNS service disruptions</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.5 Sustaining DNS services until explicit instructions are received to conclude operations</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.5.2.6 Setting up DNS services in advance of a transfer</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">2.6 Not following best practices </div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.6.1 Prevent access to domain portfolio</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.1 Registration verification</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.2 Improve password-based authentication system</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.3 Register a PC or IP address from which to administer an account</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.4 Multi-factor authentication</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.5 Challenge systems</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.6 Per-domain access controls</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.7 Multiple, unique points of contact</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.8 Change notifications or confirmations</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.8.1 SAC 40 Finding (7) Registration service providers rely more heavily on unconfirmed email to deliver security-related correspondence (e.g., change notifications) than email delivery assurance and security characteristics merit. Attackers often defeat this method of correspondence by preventing email delivery when they modify the DNS configuration of domains through compromised registration accounts. Offering customers choices of alternative contact media or extending notification services to include some form of confirmation of receipt could reduce or mitigate the risk of exploitation or misuse of domain names and name resolution services associated with those names.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.9 Multi-recipient notifications</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.10 Multiple delivery methods for critical correspondence</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.11 Domain name points of contact considerations</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.1 Use separate identities for registrant, technical, administrative and billing contacts</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.1.1 Identifying multiple points of contact offers an organization some protection in situations where a single contact is provided for all roles and that contact ceases to be employed by an organization, or in a circumstance where the only identified contact is not available to resolve a problem or respond to a reported abuse of the domain name. Distinct points of contact also offer some diversity in managing domain names. Each of these contacts can represent departments or divisions in an organization that are responsible for some aspect of domain name management. For example, while legal staff or an IP&amp;T department may be best suited to manage the registrant role, IT may be best suited to manage the technical role, corporate communications may be best suited to manage the administrative role, and finance best suited to manage the billing role.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.2 Incorporate registrar email correspondence into domain management</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.2.1 Ask your registrar for a list of correspondence routinely issued by email, and consult with your registrar to determine which of your email contacts is used for routine correspondence. Use your email system to route correspondence to the organization&rsquo;s point of contact that is responsible for responding to or taking action. For example, consider whether you can route registrar email correspondence so that your technical contact receives DNS configuration change notices, your legal department receives renewal and WHOIS accuracy notices, etc.21</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.3 Identify domain name registration points of contact by role</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.3.1 In cases where a domain name is registered to an organization (business entity), consider creating points of contact that do not create a relationship between any natural person or employee. This action may help an organization avoid disputes over ownership of a domain.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.4 Add diversity to email contacts to reduce single points of failure or attack</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.4.1 Access to all the domains in a domain name registration account is commonly granted through a single user account. This access also allows an attacker to modify contact and DNS configuration information for all domains managed through the user account. Thus, if Example Networks, Inc. manages the domains example.net, example.com, and example.biz from the same domain name registration account and that account is compromised, the attacker can alter DNS and block delivery of mail to all of these domains.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.5 Keep key email accounts secure</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.5.1 Email is an important component of registrant- registrar communication. Key email accounts receive registrar notifications and registration account password reset/recovery messages and thus should only be accessed by authorized parties. Maintain the security of key email accounts by strengthening client authentication. Use encryption (TLS extensions for SMTP) to protect mail client-server communications from eavesdropping. Maintain secure operations at the mail server that hosts key email accounts as well. For example, mail servers that host key email accounts should be Internet standards compliant. Consider adopting some form of email reputation, data integrity or authentication system and follow best sender, forwarding, and antispam practices published by such organizations as the Messaging Anti-Abuse Working Group (MAAWG)22 and the Anti-Phishing Working Group (APWG)23 so that your mail servers will not be reported to spam blacklists.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.6 Improve change control and coordination</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.6.1 Large organizations often implement resource management to deal with changes in personnel or equipment to domain registrations that must be coordinated across departments or business units. These are characterized as &ldquo;add, drop, change&rdquo; processes. Domain name management shares characteristics with such resource management structures. Organizations should consider the value of using registrar correspondence to trigger intra-organizational activity. For example, an organization may want to have the technical contact for a domain name notify all departments whose system configurations include name servers upon receipt of a confirmation email from a registrar when a change to DNS name servers for the domain is made. Organizations should consider the value of implementing measures to notify registrant, technical, or administrative contacts when changes are made to any contact or configuration information for any domain name registered by the organization.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.7 Maintain accurate external contacts</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.11.7.1 The SSAC encourages registrants to catalog points of contact information for registrars where they have domain registration accounts and make these available to all internal and contracted parties who are involved in domain name management. Registrar points of contact of particular interest for registrants include any contact that may assist the registrant in a business, operational or security matter. The list may include general information contacts, false WHOIS and abuse contacts, and (where applicable) internal contacts responsible for your account portfolio, abuse, spam, etc.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.12 Protection against unauthorized access</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1 Protect account credentials</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.1 Maintain a list of authorized contacts for each domain registration account;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.2 2. Advise authorized contacts that they are responsible for keeping secret the account credentials for domain registration accounts, and that they must not disclose or share passwords;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.3 3. Identify measures authorized contacts must take should they discover that credentials have been disclosed;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.4 4. Authorized contacts must compose passwords used to access a registration account using applicable organizational policies and commonly recognized best practices for composition (e.g., length and complexity), re-use, and longevity;14</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.5 5. Alternatively, if the registrar supports a form of multi-factor authentication (e.g., a hardware or software token), authorized contacts must keep the token safe from loss, damage, or unauthorized use;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.6 6. Use different credentials for each account;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.7 7. Partition particularly sensitive or important domain registrations into an account whose credentials are held by more senior personnel;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.8 8. Securely escrow all registration account credentials;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.9 9. Define and implement a recovery process with detailed auditing;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.10 10. Define the circumstances where recovery is permitted, who has authority to recover credentials from escrow, and who is to be notified when escrowed credentials are accessed;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.11 11. Changes in personnel authorized as contacts for a registrar account should cause new credentials to be created and old credentials to be revoked. (This may require coordination with a registrar, i.e., in cases where the registrant intends to change the user account identifier.); and</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.1.12 12. Employee resource management processes such as employee termination and employee transfer should be modified to check if the employee has domain registration account access. The processes could be modeled after similar checks for employee access to other assets, such as financial accounts.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2 Take advantage of routine correspondence from registrars</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.1 Use domain name renewal notifications to trigger a review or renewal action by staff responsible for Intellectual Property and Trademark matters, marketing, or generally any group that should decide whether to renew or allow a registration to expire.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.2 2. Use WHOIS accuracy reporting obligation notifications to trigger action by staff to review and then confirm or update the registration information that must be publicly accessible via WHOIS services.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.3 3. Use configuration change notifications to trigger checks by technical staff to verify that the changes are authorized and correct. Registrars may issue change notifications for any of the following events:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.3.1 Domain name servers. Unauthorized or erroneous additions, deletions or changes to the list of domain name servers (or the IP addresses registered for those servers) that resolve the subdomains (labels) of a domain can result in disruption of service and should be confirmed by staff responsible for managing the organization&rsquo;s DNS.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.3.2 b. Contact information. Changes to registrant, administrative, or technical contact information should be confirmed to prevent attempts to divert ownership or correspondence away from authorized representatives of the organization.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.3.3 c. Changes to domain status at registry. Registrars and registries coordinate the state (status) of a domain name in a registry using provisioning protocols.16 Registrars publish the status of a domain via WHOIS. Changes to domain status should be confirmed to assure that the domain is in the organization&rsquo;s desired operational state.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.3.4 d. Changes to domain status at registrar. Certain registrars allow domain- specific settings (e.g. private registration, domain forwarding, autorenew) that are held at the registrar. Changes to these services can have both long-term and short-term impact and therefore changes should be confirmed.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.4 4. Use notifications regarding changes to or pending expiration of credit card or other payment methods and associated billing information to trigger checks by accounting personnel to ensure that changes are authorized and correct, needed payments are scheduled, and scheduled payments are not declined.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.5 5. Designate a responsible party for each notification or have the notification trigger the creation of a ticket in a ticketing system. Such measures ensure that no notifications are ignored or are not responded to in the necessary or appropriate timeframe.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.6 6. Define required responses and establish a clear SLA for each response to each type of event.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.2.7 7. In order to protect email delivery against disruption attacks, contact email addresses for a domain should be assigned to mail servers named outside that domain and registration account. For example, if the domain example.net is managed through an account A at registrar X, use email addresses assigned from a different domain (example.biz) managed through an account B (and possibly at registrar Y). This measure prevents an attacker who succeeds in compromising a domain account from preventing delivery of notification emails by altering DNS configuration for a domain.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3 Maintain documentation to "prove registration"</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.1 Suggested documentation includes:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.2 &bull; Copies of registration records;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.3 &bull; Billing records, especially ones that show payments have been made;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.4 &bull; Logs, archives, or financial transactions that associate a domain name with content that you, the rightful registrant, published.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.5 &bull; Telephone directories (Yellow Pages), marketing material, etc. that contain advertising that associates you, the registrant, with the domain name;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.6 &bull; Correspondence to you from registrars and ICANN that mentions the domain name; and</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.12.3.7 &bull; Legal documents, tax filings, government-issued IDs, business tax notices, etc. that associate you, the registrant, with the domain name.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.13 Engaging the customer</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.1 Identify multiple domain account points of contact</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.2 &bull; Include point of contact information administration in the Employee Resource Management process to assure that when a terminated employee&rsquo;s credentials are rescinded, all domain registration point of contact information associated with that employee is changed as well.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.3 &bull; Impose a password change policy. &bull; Periodically verify contacts. &bull; Proactively monitor domain name registration.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.4 &bull; Assign email addresses for all registration points of contact from a different domain than the registered domain name. (Some registrants may want to create multiple domain registration accounts as an additional safeguard.)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.5 &bull; Treat transfer attempts as a security event (check and re-check).</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.6 &bull; Use a separate domain for registration contact email accounts from domains used for other business purposes. For example, assign email addresses for example.info&rsquo;s points of contact from example.net.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.7 &bull; Create role accounts: e.g., domainadmincontact@example.com, domainregistrantcontact@example.biz, domaintechnicalcontact@example.net. (Note that when role accounts are used, periodic checks of such accounts are strongly recommended to confirm that the role account is monitored by registrant staff without interruption due to personnel, administrative or operational changes within the organization.)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.13.8 &bull; Alias multiple recipients for a role account for notifications. Use this form of mail explosion to provide &ldquo;blanket delivery&rdquo; for critical registrar correspondence to increase the likelihood that the correspondence is received and processed in a timely manner.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.14 Inform the customer</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.14.1 Recommendation SAC007-(8): Registrars should improve registrant awareness of the threats of domain name hijacking and registrant impersonation and fraud, and emphasize the need for registrants to keep registration information accurate. Registrars should also inform registrants of the availability and purpose of the Registrar-Lock, and encourage its use. Registrars should further inform registrants of the purpose of authorization mechanisms (EPP authInfo), and should develop recommended practices for registrants to protect their domains, including routine monitoring of domain name status, and timely and accurate maintenance of contact and authentication information.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.1.15 Measures from prior SSAC reports</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.1 Use a unique EPP authInfo code value for each registered domain name</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.2 Establish a uniform default setting of domain locks across registrars.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.3 Investigate additional methods to improve accuracy of registrant records.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.4 Collect emergency point of contact information from registrants, registrars, and resellers for parties who are suited to assist in responding to an urgent restoration of domain name incident.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.5 Consider measures to improve authentication and authorization used in all registrar business processes.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.6 Protect registrant information that can be used to facilitate fraud and impersonation, and theft of a domain name.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.7 Improve auditing of resellers&rsquo; compliance with record keeping requirements.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.8 Ensure that resellers understand record keeping requirements of registrars (and ICANN), and improve compliance with these requirements.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.1.15.9 Provide clear and readily accessible information to registrants regarding domain locking and domain name protection measures offered by registrars.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.6.2 Protecting DNS configuration information from abuse</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.1 Require multi-factor authentication for DNS configuration changes.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.2 Require confirmations of change from multiple contacts using email, possibly via media other than email.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.3 Deliver notifications to multiple contacts when changes performed.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.4 Monitor DNS changes for anomalies or abuse.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.5 Reduce scope of the authority of a given account</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.1 SAC 40 Finding (6) Commonly, once a user is authenticated at a registration account portal or login, the user (or imposter) has global privileges and can modify contact information as well as DNS configuration information. Making granular access controls available to customers as an optional service &ndash; in particular, the ability to limit the type of actions each point of contact is able to perform with regard to changing contact and DNS configuration information and authorizing transfers &ndash; could reduce or mitigate the risk of exploitation or misuse of domain names and name resolution services associated with those names.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.2 Use separate identities for registrant, technical, administrative and billing contacts</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.2.1 Identifying multiple points of contact offers an organization some protection in situations where a single contact is provided for all roles and that contact ceases to be employed by an organization, or in a circumstance where the only identified contact is not available to resolve a problem or respond to a reported abuse of the domain name. Distinct points of contact also offer some diversity in managing domain names. Each of these contacts can represent departments or divisions in an organization that are responsible for some aspect of domain name management. For example, while legal staff or an IP&amp;T department may be best suited to manage the registrant role, IT may be best suited to manage the technical role, corporate communications may be best suited to manage the administrative role, and finance best suited to manage the billing role.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.3 Identify domain name registration points of contact by role</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.3.1 In cases where a domain name is registered to an organization (business entity), consider creating points of contact that do not create a relationship between any natural person or employee. This action may help an organization avoid disputes over ownership of a domain.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.4 Add diversity to email contacts to reduce single points of failure or attack</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.5.4.1 Access to all the domains in a domain name registration account is commonly granted through a single user account. This access also allows an attacker to modify contact and DNS configuration information for all domains managed through the user account. Thus, if Example Networks, Inc. manages the domains example.net, example.com, and example.biz from the same domain name registration account and that account is compromised, the attacker can alter DNS and block delivery of mail to all of these domains.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.6 Protect account credentials</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.1 Maintain a list of authorized contacts for each domain registration account;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.2 2. Advise authorized contacts that they are responsible for keeping secret the account credentials for domain registration accounts, and that they must not disclose or share passwords;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.3 3. Identify measures authorized contacts must take should they discover that credentials have been disclosed;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.4 4. Authorized contacts must compose passwords used to access a registration account using applicable organizational policies and commonly recognized best practices for composition (e.g., length and complexity), re-use, and longevity;14</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.5 5. Alternatively, if the registrar supports a form of multi-factor authentication (e.g., a hardware or software token), authorized contacts must keep the token safe from loss, damage, or unauthorized use;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.6 6. Use different credentials for each account;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.7 7. Partition particularly sensitive or important domain registrations into an account whose credentials are held by more senior personnel;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.8 8. Securely escrow all registration account credentials;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.9 9. Define and implement a recovery process with detailed auditing;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.10 10. Define the circumstances where recovery is permitted, who has authority to recover credentials from escrow, and who is to be notified when escrowed credentials are accessed;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.11 11. Changes in personnel authorized as contacts for a registrar account should cause new credentials to be created and old credentials to be revoked. (This may require coordination with a registrar, i.e., in cases where the registrant intends to change the user account identifier.); and</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.12 12. Employee resource management processes such as employee termination and employee transfer should be modified to check if the employee has domain registration account access. The processes could be modeled after similar checks for employee access to other assets, such as financial accounts.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.13 Incorporate registrar email correspondence into domain management</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.13.1 Ask your registrar for a list of correspondence routinely issued by email, and consult with your registrar to determine which of your email contacts is used for routine correspondence. Use your email system to route correspondence to the organization&rsquo;s point of contact that is responsible for responding to or taking action. For example, consider whether you can route registrar email correspondence so that your technical contact receives DNS configuration change notices, your legal department receives renewal and WHOIS accuracy notices, etc.21</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.14 Keep key email accounts secure</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.14.1 Email is an important component of registrant- registrar communication. Key email accounts receive registrar notifications and registration account password reset/recovery messages and thus should only be accessed by authorized parties. Maintain the security of key email accounts by strengthening client authentication. Use encryption (TLS extensions for SMTP) to protect mail client-server communications from eavesdropping. Maintain secure operations at the mail server that hosts key email accounts as well. For example, mail servers that host key email accounts should be Internet standards compliant. Consider adopting some form of email reputation, data integrity or authentication system and follow best sender, forwarding, and antispam practices published by such organizations as the Messaging Anti-Abuse Working Group (MAAWG)22 and the Anti-Phishing Working Group (APWG)23 so that your mail servers will not be reported to spam blacklists.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.15 Maintain accurate external contacts</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.6.15.1 The SSAC encourages registrants to catalog points of contact information for registrars where they have domain registration accounts and make these available to all internal and contracted parties who are involved in domain name management. Registrar points of contact of particular interest for registrants include any contact that may assist the registrant in a business, operational or security matter. The list may include general information contacts, false WHOIS and abuse contacts, and (where applicable) internal contacts responsible for your account portfolio, abuse, spam, etc.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.7 Take advantage of routine correspondence from registrars</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.1 Use domain name renewal notifications to trigger a review or renewal action by staff responsible for Intellectual Property and Trademark matters, marketing, or generally any group that should decide whether to renew or allow a registration to expire.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.2 2. Use WHOIS accuracy reporting obligation notifications to trigger action by staff to review and then confirm or update the registration information that must be publicly accessible via WHOIS services.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.3 3. Use configuration change notifications to trigger checks by technical staff to verify that the changes are authorized and correct. Registrars may issue change notifications for any of the following events:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.3.1 Domain name servers. Unauthorized or erroneous additions, deletions or changes to the list of domain name servers (or the IP addresses registered for those servers) that resolve the subdomains (labels) of a domain can result in disruption of service and should be confirmed by staff responsible for managing the organization&rsquo;s DNS.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.3.2 b. Contact information. Changes to registrant, administrative, or technical contact information should be confirmed to prevent attempts to divert ownership or correspondence away from authorized representatives of the organization.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.3.3 c. Changes to domain status at registry. Registrars and registries coordinate the state (status) of a domain name in a registry using provisioning protocols.16 Registrars publish the status of a domain via WHOIS. Changes to domain status should be confirmed to assure that the domain is in the organization&rsquo;s desired operational state.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.3.4 d. Changes to domain status at registrar. Certain registrars allow domain- specific settings (e.g. private registration, domain forwarding, autorenew) that are held at the registrar. Changes to these services can have both long-term and short-term impact and therefore changes should be confirmed.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.4 4. Use notifications regarding changes to or pending expiration of credit card or other payment methods and associated billing information to trigger checks by accounting personnel to ensure that changes are authorized and correct, needed payments are scheduled, and scheduled payments are not declined.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.5 5. Designate a responsible party for each notification or have the notification trigger the creation of a ticket in a ticketing system. Such measures ensure that no notifications are ignored or are not responded to in the necessary or appropriate timeframe.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.6 6. Define required responses and establish a clear SLA for each response to each type of event.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.7.7 7. In order to protect email delivery against disruption attacks, contact email addresses for a domain should be assigned to mail servers named outside that domain and registration account. For example, if the domain example.net is managed through an account A at registrar X, use email addresses assigned from a different domain (example.biz) managed through an account B (and possibly at registrar Y). This measure prevents an attacker who succeeds in compromising a domain account from preventing delivery of notification emails by altering DNS configuration for a domain.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.8 Maintain documentation to "prove registration"</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.1 Suggested documentation includes:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.2 &bull; Copies of registration records;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.3 &bull; Billing records, especially ones that show payments have been made;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.4 &bull; Logs, archives, or financial transactions that associate a domain name with content that you, the rightful registrant, published.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.5 &bull; Telephone directories (Yellow Pages), marketing material, etc. that contain advertising that associates you, the registrant, with the domain name;</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.6 &bull; Correspondence to you from registrars and ICANN that mentions the domain name; and</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.8.7 &bull; Legal documents, tax filings, government-issued IDs, business tax notices, etc. that associate you, the registrant, with the domain name.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.2.9 Improve change control and coordination</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.2.9.1 Large organizations often implement resource management to deal with changes in personnel or equipment to domain registrations that must be coordinated across departments or business units. These are characterized as &ldquo;add, drop, change&rdquo; processes. Domain name management shares characteristics with such resource management structures. Organizations should consider the value of using registrar correspondence to trigger intra-organizational activity. For example, an organization may want to have the technical contact for a domain name notify all departments whose system configurations include name servers upon receipt of a confirmation email from a registrar when a change to DNS name servers for the domain is made. Organizations should consider the value of implementing measures to notify registrant, technical, or administrative contacts when changes are made to any contact or configuration information for any domain name registered by the organization.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">2.6.3 Measures to detect or prevent unauthorized change activity</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.3.1 Overview</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.1.1 Routine monitoring to detect, isolate, and identify suspicious or anomalous behavior is a common, proactive best practice across networking and security disciplines.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.3.2 Monitoring for WHOIS change activity</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.1 Organizations and individuals should consider measures to routinely monitor registration information for all registered domains.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2 Compare the results against the registration data you expect to find. In particular, and for each domain name you have registered, ask the following questions:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.1 &bull; Does the date indicated as the last date on which the registration was modified match the date you most recently made an authorized change to your registration?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.2 &bull; Are the data returned in WHOIS responses for registrant, technical, and administrative contacts for this domain name complete and accurate (i.e., the data are exactly what you intended to be published)?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.3 &bull; Are the names servers listed in the registration record the exact list of name servers that provide authoritative name service for your organization?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.4 &bull; Is the sponsoring registrar the registrar with whom you do business for this domain name?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.5 &bull; Is the status of the domain what you expect it to be? (Refer to section 7.3 Setting and Monitoring Domain Status.)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.6 &bull; Do the creation and expiration dates for the domain registration match the dates you registered the domain and the date on which your current registration expires?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.2.7 &bull; Is the DNSSEC signing information correct? (Refer to section 6.2 DNSSEC Support Considerations.)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.2.3 Inaccuracies or omissions in the data returned from one or more WHOIS services merit immediate action. Organizations can model this action after other problem resolution or incident responses your organization uses and should take into consideration factors that justify escalating the event from a trouble report to an incident.</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.3.3 Monitoring DNS change activity</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.1 Organizations and individuals should consider measures to routinely monitor the operational status and zone data published by authoritative name servers for all registered domains.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.1.1 The objectives of this monitoring activity are to assure that name service for each domain name registered by your organization remains configured as you intended it to be and returns complete and accurate data in accordance with DNS standards and best practices.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2 Confirmation activities</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.1 Are the name servers identified in the WHOIS response for the domain name the complete and accurate set of name servers that your organization has identified as providing authoritative name service for the domain?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.2 Are the name servers published in the TLD zone file for the domain name the complete and accurate set of name servers that your organization has identified as providing authoritative name service for the domain?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.3 Are the name servers operational (e.g., do the hosts respond to a ping or simple DNS query)? Are they performing as expected?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.4 Are all the name servers secured (hardened against known attacks)? Are all software (OS, name server) packages current with respect to approved versions (e.g., tested and approved by your technical staff), released hot fixes and patches?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.5 Are the name servers responding in manners consistent with your baseline correct configuration?</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.3.2.6 Do all the name servers that provide authoritative name service for the domain return complete and correct zone data for all formulations of DNS queries against the zone?</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">2.6.3.4 Setting and monitoring domain status (domain locks)</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1 Registrar status codes</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.1 Certain registrars permit registrants to control one or more registrar (client) status codes. The following status codes, also known as registrar locks, are of particular importance to registrants:</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.1.1 clientTransferProhibited. When set, the registry will not allow a registrar to accept a transfer of the domain name away from the sponsoring registrar. Certain registrars automatically keep the clientTransferProhibited status set on domain names and registrants use a third party authorization process between the &ldquo;transfer-from&rdquo; registrar, the &ldquo;transfer-to&rdquo; registrars and the registry to protect against unauthorized transfers.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.1.2 clientUpdateProhibited. When set, the registry will not make changes to the registration details of the domain name. Certain registrars automatically unlock and re-lock this status when a registrant has successfully logged into a domain account. Other registrars allow registrants to unlock and re-lock this status through a domain management interface.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.1.3 clientDeleteProhibited. When set, the registry will reject requests to delete a domain name from the registry.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.2 The SSAC encourages registrants to make certain that clientTransferProhibited is set to prevent unauthorized or unintended transfer of a domain away from the rightful registrant to a different party (e.g., a hijacker).</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.3 SSAC also encourages registrants to make certain that clientUpdateProhibited is set to prevent changes to registration contact or DNS configuration information without first unlocking this status.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.1.4 Many registrars issue notifications when certain client status codes are modified. These notifications are extremely important because they may forewarn registrants of unauthorized registration account access.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.2 Registry status codes</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.2.1 Certain registrars and registries work cooperatively to offer registrants the ability to add server status codes (registry locks) as an additional layer of protection beyond client status codes.</div>
+</div>
+<div id="levelXIndent">
+<div id="levelXStyle">2.6.3.4.2.2 We encourage you to consider setting registry locks as a complement to registrar locks for a second level of security against unauthorized transfer, deletion or change of registration information associated with your domain names.</div>
+</div>
+<div id="level2Indent">
+<div id="level2Style">3 Vulnerability of DNS software, OS, etc.</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.1 registrar automation patterns/behaviors</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.2 Content provisioning exposure -- eg Akemi -- if credentials leak, there's broad exposure -- registrar account credentials</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.3 Inaccurate registration contact information</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.3.1 Domain name registration information and directory services -- SAC 33</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.4 Single-factor authentication</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.4.1 SAC 40 Finding (4) Registrar services (and registrants) place greater confidence on the single factor authentication for login to accounts than the method merits. This authentication method has been repeatedly circumvented using various forms of social engineering, brute force attacks, and other techniques.</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.5 Time to live</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.5.1 SAC 40 Finding (5) Attackers target DNS configuration when they succeed in compromising a domain registration account. Due to the distributed nature of the DNS, the effects of altering DNS configuration information persist beyond recovery and mitigation efforts by registrars. Malicious or incorrect DNS information can persist in locations throughout the Internet for the full duration of the TTL value associated with the altered DNS resource record(s). Attackers may alter the TTL specifically for this purpose.</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.6 Weaknesses of DNSSEC (RFC 3833)</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.1 Configuration errors -- DNSSEC is complex to implement, trivial zone-configuration errors can cause serious problems for resolvers and error-reporting capabilities leave something to be desired.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.2 Expired keys</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.3 Increased load, due to increased packet size as a result of DNSSEC </div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.4 Increased response-time -- also due to increased packet size which increases bandwidth and processor load</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.5 Hierarchical trust model -- similar to the broader vulnerability introduced by a hierarchical trust model, compromises of zones in between root and a particular target name can damage the integrity of DNSSEC's ability to protect the integrity of the data owned by that target name.</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.6 Key rollover -- hard to do, with attendant vulnerability</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.7 Requirement for time-synchronization -- in order to determine whether keys have expired.  </div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.8 Wildcard RRs in a zone - complicates authentication, inherently more complex</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.6.9 DNSSEC private key exposure</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.7 Securing DNS Dynamic Update (RFC 3833)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.8 Securing DNS Zone Replication (RFC 3833)</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.9 Wildcards</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.9.1 Issue statement (SAC 41)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.1.1 &ldquo;By the very nature of the DNS, any third party who provides an iterative resolver that participates in the resolution process is a potential man in themiddle and has the ability to modify messages it receives from an authoritative name server before forwarding these to a client.&rdquo;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.1.2 "DNS response modifications can affect applications other than web and in particular can disrupt email, Internet telephony, and other Internet services.&rdquo;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.1.3 &ldquo;DNS response modifications can create unpredictable responses (nominally a stability issue, but in the worst case possibly resulting in a denial of service attack).&rdquo;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.1.4 &ldquo;Any application or management activity that relies on NXDomain (name error) responses for correct operation or intervention will no longer work for all labels within the domain that are redirected.&rdquo; (In the context of TLD redirection, organizations that seek to protect brands from infringement may not be able to use the same automation, in the same manner, if that automation relies on name error answers from TLD name server operators).</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.9.2 Why Top Level Domains Should Not Use Wildcard Resource Records - SAC 15</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.9.3 Issue statement (SAC 6)</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.3.1 [Redirection] &ldquo;... disturbed a set of existing services that had been functioning satisfactorily. Names that were mistyped, had lapsed, had been registered but not delegated, or had never been registered in DNS were resolved as if they existed. As a consequence, certain e-mail systems, spam filters and other services failed resulting in direct and indirect costs to third parties, either in the form of increased network charges for some classes of users, a reduction in performance, or the creation of work required to compensate for the consequent failure.&rdquo;</div>
+</div>
+<div id="level5Indent">
+<div id="level5Style">3.9.3.2 &ldquo;Synthesized responses should not be introduced into top-level domains (TLDs) or zones that serve the public, whose contents are primarily delegations and glue, and where delegations cross organizational boundaries over which the operator may have little control or influence.&rdquo;</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.9.4 Prohibit the use of redirection and synthesized responses by new TLD -- SAC 41</div>
+</div>
+<div id="level4Indent">
+<div id="level4Style">3.9.5 Preliminary report on DNS response Modification -- SAC 32</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">3.10 high value names</div>
+</div>
+<div id="level2Indent">
+<div id="level2Style">4 Bad players</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">4.1 Insiders</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">4.2 Organized crime</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">4.3 Geo-political groups</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">4.4 Rogue elements</div>
+</div>
+<div id="level3Indent">
+<div id="level3Style">4.5 Nation states</div>
+</div>
+</body>
+</html>

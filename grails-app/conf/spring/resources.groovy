@@ -1,5 +1,6 @@
 import org.grails.plugins.console.ConsoleService;
 
+import com.msi.grcdsl.AuditService;
 import com.msi.grcdsl.ConsoleService
 
 // Place your Spring DSL code here
@@ -19,5 +20,9 @@ beans = {
 		//grailsApplication = ref("grailsApplication")
 	}
 	*/
+	
+	auditService(AuditService) {
+		random = new Random()
+	}
 	
 }

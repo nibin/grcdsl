@@ -57,6 +57,7 @@ grails.project.dependency.resolution = {
         build ":tomcat:$grailsVersion"
 
         runtime ":database-migration:1.3.2"
+		runtime ":mysql-connectorj:5.1.22.1"
 
         compile ':cache:1.0.1'
 		compile ":console:1.2"

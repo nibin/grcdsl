@@ -68,7 +68,7 @@ secure.with {
 }
 
 CompilerConfiguration config = new CompilerConfiguration()
-config.addCompilationCustomizers(imports, secure)
+config.addCompilationCustomizers(imports)
 GroovyClassLoader loader = new GroovyClassLoader(this.class.classLoader)
 
 //loader.rootLoader.addURL(new URL("file://RobotBaseScriptClass.groovy"))
@@ -76,6 +76,8 @@ GroovyClassLoader loader = new GroovyClassLoader(this.class.classLoader)
 def robot = new Robot()
 def binding = new Binding([
 	robot: robot
+	//move: robot.&move,
+	//at: robot.&at
 	
 ])
 
