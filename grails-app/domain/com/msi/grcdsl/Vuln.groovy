@@ -5,12 +5,12 @@ import org.hibernate.type.EnumType;
 class Vuln {
 
 	String shortDescription
-	String longDescription
+	String exposedRisk
 	Impact impact
 	
     static constraints = {
 		shortDescription nullable:false
-		longDescription nullable:false 
+		exposedRisk nullable:false 
 		impact type: EnumType
     }
 }

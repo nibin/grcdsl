@@ -1,24 +1,26 @@
 package com.msi.grcdsl
 
-import java.util.List;
+import grails.converters.JSON
+
+
 
 abstract class GrcDslCommService extends Script {
-	
+
 	String sayHelloNow() {
 		return "hello from common func"
 	}
-	
+
 	void set(Map m, Object obj) {
 		obj.properties = m
 	}
-	
+
 	def start(Object obj) {
-						
+
 		[on: { l ->
 				if(obj instanceof Audit) {
 					def audit = this.binding.audit
-					log.info("In on closure for audit. ${audit}")
-					log.info("Operating on a list of ${l.size()}")
+					//log.info("In on closure for audit. ${audit}")
+					//log.info("Operating on a list of ${l.size()}")
 					def auditService = this.binding.ctx.auditService
 					auditService.startAudit(audit, l)
 				} else {
@@ -26,6 +28,52 @@ abstract class GrcDslCommService extends Script {
 				}
 			}
 		]
-		
+	}
+
+	def create(Domains domain) {
+		[from: { finding ->
+				if(finding instanceof Finding &&
+				domain == Domains.risk) {
+					def riskService = this.binding.ctx.riskService
+					def risk = riskService.createRisk(finding)
+					return risk
+				} else {
+					log.warn("Unrecognized grammer")
+				}
+			}
+		]
+	}
+
+	def select(List list) {
+		[where: { param ->
+				[gt: { value ->
+						return list.findAll { it->
+							if(it[param] > value.getValue())  return true
+							else false
+						}
+						//log.info("Evaluating gt")
+					},lt: { value ->
+						return list.findAll { it->
+							if(it[param] < value.getValue())  return true
+							else false
+						}
+					}]
+			}
+		]
+	}
+
+	def send(NotificationType type) {
+		[of: { items ->
+				[to: { rcpt ->						
+						def b = items as JSON
+						def mailService = this.binding.ctx.mailService
+						mailService.sendMail {
+							to "${rcpt}"
+							from "nibin.gv@gmail.com"							
+							subject "Message from GRCDSL"
+							body "${b}"
+						 }
+					}]
+			}]
 	}
 }

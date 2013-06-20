@@ -11,13 +11,20 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 
 	@Override
 	Object eval(String code, Map bindingValues) {
-
+		
 		bindingValues.assets = Asset.list()
 		bindingValues.audit = new Audit()
 
 		//assignBuilder(bindingValues)
+		
+		assignMetaClasses()
 
 
+		def notificationMaps = NotificationType.values().collectEntries {
+			[(it.name()): it]
+		}
+		bindingValues.putAll(notificationMaps)
+		
 		def domainMap = Domains.values().collectEntries {
 			[(it.name()): it]
 		}
@@ -37,10 +44,34 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 		bindingValues.log = log
 		new GroovyShell(grailsApplication.classLoader, new Binding(bindingValues), conf)
 	}
+	
+	def assignMetaClasses() {
+		Integer.metaClass.getDollar = { ->
+			new Currency(delegate, CurrencyUnit.dollars)			
+		}
+		
+		Integer.metaClass.getRupees = { ->
+			new Currency(delegate, CurrencyUnit.rupees)			
+		}
+		
+		Integer.metaClass.getYen = { ->
+			new Currency(delegate, CurrencyUnit.yen)
+		}
+		
+		Integer.metaClass.getEuro = { ->
+			new Currency(delegate, CurrencyUnit.euro)
+		}
+		
+		Integer.metaClass.getPound = { ->
+			new Currency(delegate, CurrencyUnit.pound)
+		}
+		
+	}
 
 	def prepareCompilerConf() {
 		def imports = new ImportCustomizer()
 		imports.addStarImport("com.msi.grcdsl")
+		imports.addStarImport("grails.converters")
 
 		/*		
 		 def exprClosure = { expr -> 

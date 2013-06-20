@@ -12,10 +12,13 @@ class AuditService {
 			audit.addToAssets(it)
 			audit.save(failOnError: true, flush: true)
 		}
-		audit.status = "STARTED"
+		audit.status = "started"
 		audit.save(failOnError: true, flush: true)
 		
 		createRandomFindings(audit, assets, 10)
+		
+		audit.status = "failed"
+		audit.save(failOnError: true, flush: true)
 	}
 
 	def createRandomFindings(def audit, List assets, int count) {
@@ -35,11 +38,11 @@ class AuditService {
 			res << l
 		}
 		
-		log.info("Created random asset-vulns = ${res}")
+		//log.info("Created random asset-vulns = ${res}")
 		
 		def resSet = res as Set //removes duplicates
 		
-		log.info("After removing duplicates = ${resSet}")
+		//log.info("After removing duplicates = ${resSet}")
 		
 		resSet.each {item ->
 			item.each { asset, vuln ->
