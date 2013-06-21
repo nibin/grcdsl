@@ -13,6 +13,6 @@ if (audit.status == /failed/) {
 
 risks = Risk.findAllByAudit audit
 
-def highRisks = select risks where 'cost' gt 1000.dollar
+def highRisks = select risks where 'cost' gt 50.dollar
 
-send mail of highRisks to "nibin012@gmail.com"
+send mail of highRisks to "nibin.varghese@metricstream.com"

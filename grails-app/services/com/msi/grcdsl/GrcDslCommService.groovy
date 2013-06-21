@@ -19,8 +19,6 @@ abstract class GrcDslCommService extends Script {
 		[on: { l ->
 				if(obj instanceof Audit) {
 					def audit = this.binding.audit
-					//log.info("In on closure for audit. ${audit}")
-					//log.info("Operating on a list of ${l.size()}")
 					def auditService = this.binding.ctx.auditService
 					auditService.startAudit(audit, l)
 				} else {
@@ -51,7 +49,6 @@ abstract class GrcDslCommService extends Script {
 							if(it[param] > value.getValue())  return true
 							else false
 						}
-						//log.info("Evaluating gt")
 					},lt: { value ->
 						return list.findAll { it->
 							if(it[param] < value.getValue())  return true
@@ -64,15 +61,16 @@ abstract class GrcDslCommService extends Script {
 
 	def send(NotificationType type) {
 		[of: { items ->
-				[to: { rcpt ->						
+				[to: { rcpt ->
 						def b = items as JSON
 						def mailService = this.binding.ctx.mailService
 						mailService.sendMail {
 							to "${rcpt}"
-							from "nibin.gv@gmail.com"							
+							from "grcdsl@metricstream.com"
 							subject "Message from GRCDSL"
 							body "${b}"
-						 }
+						}
+						return "Sent mail"
 					}]
 			}]
 	}

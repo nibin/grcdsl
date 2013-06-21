@@ -6,7 +6,7 @@ class AuditService {
 	
 	def random
 
-	def startAudit(Audit audit, List assets) {
+	def startAudit(Audit audit, ArrayList assets) {
 
 		assets.each {
 			audit.addToAssets(it)
@@ -56,5 +56,9 @@ class AuditService {
 			}
 		}		
 		
+	}
+	
+	public void setJavaUtilRandom(Random random) {
+		this.random = random
 	}
 }

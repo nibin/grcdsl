@@ -136,12 +136,4 @@ class ConsoleService extends org.grails.plugins.console.ConsoleService {
 		return config
 	}
 
-	def assignBuilder(def bindingValues) {
-
-		def g = new GrcBuilder()
-		bindingValues.builder = g
-		bindingValues.check = g.&check
-		bindingValues.of = g.&of
-	}
-
 }
