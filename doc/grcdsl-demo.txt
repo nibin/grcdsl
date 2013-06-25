@@ -1,0 +1,18 @@
+set audit, scope: "network", objective: "compliance"
+
+start audit on assets
+
+def createRiskCl = { finding ->  
+  create risk from finding
+}
+
+
+if (audit.status == /failed/) {	
+  audit.findings.each(createRiskCl)
+}
+
+risks = Risk.findAllByAudit audit
+
+def highRisks = select risks where 'cost' gt 50.dollar
+
+send mail of highRisks to "nibin.varghese@metricstream.com"
